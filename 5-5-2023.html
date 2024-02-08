@@ -1,0 +1,22 @@
+Declare
+cursor c1 is select student.ROLLNO,labname,sname,
+class,timetable from lab,student
+ WHERE student.rollno=lab.rollno
+order by lab.labname;
+
+R1 C1%ROWTYPE;
+BEGIN 
+OPEN C1;
+LOOP
+FETCH C1 INTO R1;
+EXIT WHEN C1%NOTFOUND;
+DBMS_OUTPUT.PUT_LINE('LABNAME='||R1.LABNAME);
+DBMS_OUTPUT.PUT_LINE('ROLLNO='||R1.ROLLNO);
+DBMS_OUTPUT.PUT_LINE('SNAME='||R1.SNAME);
+DBMS_OUTPUT.PUT_LINE('SCLASS='||R1.CLASS);
+DBMS_OUTPUT.PUT_LINE('TIMETABLE='||R1.TIMETABLE);
+DBMS_OUTPUT.PUT_LINE(' ');
+
+END LOOP;
+CLOSE C1;
+END;

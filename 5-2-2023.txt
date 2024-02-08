@@ -1,0 +1,43 @@
+<html>
+<body bgcolor="orange">
+<form>
+  Enter Name :&nbsp &nbsp &nbsp;
+  <input type="Text"></br>
+  Enter password:&nbsp &nbsp;
+  <input type="password"></br>
+  Enter mobaile:&nbsp &nbsp &nbsp;
+    <input type="number"></br>
+Address:&nbsp &nbsp &nbsp;
+   <Textarea>
+   </Textarea></br>
+Exam date:&nbsp &nbsp &nbsp;
+  <input type="date"></br>
+
+Exam time:&nbsp &nbsp &nbsp;
+  <input type="time"></br>
+
+select photo:<br>&nbsp &nbsp &nbsp;
+  <input type="file"></br>
+
+gender:&nbsp &nbsp &nbsp;</br>
+<input type="radio" name="r1">male</br>
+
+<input type="radio" name="r1">female</br> 
+
+select languge:&nbsp &nbsp;<br>
+<input type="checkbox">marathi<br>
+<input type="checkbox">English<br>
+<input type="checkbox">Hindi<br>
+
+select class:
+ <select>
+ <option>Fy</option>
+ <option>Sy</option>
+ <option>Ty</option>
+ </select></br>
+
+<input type="submit">
+<input type="Reset">
+</form> 
+</html>
+</body>
