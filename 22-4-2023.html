@@ -1,0 +1,21 @@
+<html>
+<form>
+<h2> Input Radius value and get the volume of a sphere</h2>
+Radius <br>
+<input type="text" id="t1"><br>
+Volume <br>
+<input type="text" id="t2"><br>
+
+<input type="button" value="Calculate" onclick="sum()">
+</html>
+</form>
+
+<script>
+function sum()
+{
+  var r=document.getElementById("t1").value;
+  var p=parseInt(r);
+  var v=4/3*3.14*p*p*p;
+  document.getElementById("t2").value=v;
+}
+</script>
