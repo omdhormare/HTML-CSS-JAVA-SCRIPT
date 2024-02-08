@@ -1,0 +1,27 @@
+
+<html>
+<body>
+	Enter Number:
+                  <input type="number" id="t1"><br>
+	<input type="button" value="check" onclick="fib()">
+	<p id="result"></p>
+	<script>
+		function fib() {
+			var n1 = 0, n2 = 1, n3, i;
+			var num = parseInt(document.getElementById("t1").value);
+			var result = "Fibonacci Series: ";
+			for (i = 1; i <= num; i++) {
+				result += "<br>" + n1;
+				n3 = n1 + n2;
+				n1 = n2;
+				n2 = n3;
+			}
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
