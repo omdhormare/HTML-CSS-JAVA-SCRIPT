@@ -1,0 +1,27 @@
+<html>
+  <form>
+    Enter string:<br>
+    <input type="text" id="t1"><br>
+    Palindrome or Not:
+    <input type="text" id="t2"><br>
+
+    <input type="button" value="Check" onclick="checkPalindrome()">
+  </form>
+
+  <script>
+    function checkPalindrome() 
+{
+const string = document.getElementById("t1").value;
+const len = string.length;
+for (let i = 0; i < len / 2; i++) 
+{
+if (string[i] !== string[len - 1 - i])
+{
+document.getElementById("t2").value = "Not Palindrome";
+return;
+}
+}
+document.getElementById("t2").value = "Palindrome";
+}
+  </script>
+</html>
